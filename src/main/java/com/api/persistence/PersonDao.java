@@ -14,10 +14,6 @@ public interface PersonDao extends JpaRepository<Person, Long> {
 	@Query("SELECT p FROM Person p where p.email = :email")
 	Person findPersonByEmail(@Param("email") String email);
 	
-	//	@Query("SELECT DISTINCT(c) FROM Campaign c, Person p where p.team.id = c.team.id and c.team.id = ?2 and " +
-	//			"NOT EXISTS(select ce from Person.campaigns ce, Campaing.people pe where ce.id = c.id and pe.id = ?1)")
-	//	List<Campaign> findCampaingsNotRegisteredAndPeriodIsValid(Long idPerson, Long idTeam);
-	
 	@Query(nativeQuery = true)
 	List<Campaign> findCampaingsNotRegisteredAndPeriodIsValid(@Param("idPerson") Long idPerson, @Param("idTeam") Long idTeam);
 	
