@@ -162,72 +162,9 @@
                 </execution>
             </executions>
 			</plugin>
-			<!--<plugin>
-            <artifactId>maven-jar-plugin</artifactId>
-            <executions>
-                <execution>
-                    <id>exec</id>
-                    <phase>package</phase>
-                    <goals>
-                        <goal>jar</goal>
-                    </goals>
-                    <configuration>
-                        <classifier>exec</classifier>
-                    </configuration>
-                </execution>
-                <execution>
-                    <phase>package</phase>
-                    <goals>
-                        <goal>jar</goal>
-                    </goals>
-                    <configuration>
-                        <forceCreation>true</forceCreation>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>-->
+
 		</plugins>
 	</build>
-
-<!--	<profiles>
-        <profile>
-            <id>heroku</id>
-            <activation>
-                <property>
-                    <name>heroku</name>
-                </property>
-            </activation>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>com.heroku.sdk</groupId>
-                        <artifactId>heroku-maven-plugin</artifactId>
-                        <version>1.1.1</version>
-                        <configuration>
-                            <appName>campaignBootRest</appName>
-                            <includeTarget>false</includeTarget>
-                            <includes>
-                                <include>${basedir}/${full-artifact-name}</include>
-                            </includes>
-                            <jdkVersion>1.8</jdkVersion>
-                            <processTypes>
-                                <web>java $JAVA_OPTS -jar ${full-artifact-name} --spring.profiles.active=heroku</web>
-                            </processTypes>
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>deploy</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
--->
 
 	<repositories>
 		<repository>
