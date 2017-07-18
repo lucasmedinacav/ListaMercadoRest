@@ -6,10 +6,6 @@
 	<groupId>com.api</groupId>
 	<artifactId>campaignBootRest</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	 <packaging>jar</packaging>
-
-	  <name>campaignBootRest</name>
-    <description>Api rest para exercicio de campanhas</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -18,10 +14,6 @@
 	</parent>
 
 	<properties>
-	 <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
-        <full-artifact-name>target/${project.artifactId}-${project.version}.jar</full-artifact-name>
 		<start-class>com.api.Application</start-class>
 		<postgresql-version>9.4.1211.jre6</postgresql-version>
 		<jersey-version>2.23.1</jersey-version>
@@ -116,62 +108,32 @@
 
 	</dependencies>
 
-		<build>
+	<build>
 		<plugins>
 			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
+				<groupId>org.apache.maven.plugins</groupId>
+    			<artifactId>maven-jar-plugin</artifactId>
 				<version>3.2</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<finalName>${project.artifactId}</finalName>
 				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+						<configuration>
+							<finalName>${project.artifactId}</finalName>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
-
-	<profiles>
-        <profile>
-            <id>heroku</id>
-            <activation>
-                <property>
-                    <name>heroku</name>
-                </property>
-            </activation>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>com.heroku.sdk</groupId>
-                        <artifactId>heroku-maven-plugin</artifactId>
-                        <version>1.1.1</version>
-                        <configuration>
-                            <appName>exampledriven-springboot-dev</appName>
-                            <includeTarget>false</includeTarget>
-                            <includes>
-                                <include>${basedir}/${full-artifact-name}</include>
-                            </includes>
-                            <jdkVersion>1.8</jdkVersion>
-                            <processTypes>
-                                <web>java $JAVA_OPTS -jar ${full-artifact-name} --spring.profiles.active=heroku</web>
-                            </processTypes>
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>deploy</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
-
 
 	<repositories>
 		<repository>
