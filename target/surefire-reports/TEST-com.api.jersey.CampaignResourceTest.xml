@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.api.jersey.CampaignResourceTest" time="8.395" tests="1" errors="1" skipped="0" failures="0">
+<testsuite name="com.api.jersey.CampaignResourceTest" time="6.615" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\GiTDevelopment\java\jdk1.8.0_112\jre\bin"/>
@@ -43,7 +43,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\GiTDevelopment\java\jdk1.8.0_112\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -U clean install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -62,7 +62,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="com.api.jersey.CampaignResourceTest" classname="com.api.jersey.CampaignResourceTest" time="8.395">
+  <testcase name="com.api.jersey.CampaignResourceTest" classname="com.api.jersey.CampaignResourceTest" time="6.615">
     <error message="Connection refused: connect" type="java.net.ConnectException">java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
@@ -156,13 +156,13 @@
 	at com.jayway.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
 	at com.api.jersey.CampaignResourceTest.setUp(CampaignResourceTest.java:37)
 </error>
-    <system-out><![CDATA[21:35:16.721 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:8080
-21:35:16.778 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:8080
-21:35:17.783 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connect to localhost:8080 timed out. Connection will be retried using another IP address
-21:35:17.783 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:8080
-21:35:18.788 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection org.apache.http.impl.conn.DefaultClientConnection@5ce8d869 closed
-21:35:18.789 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection org.apache.http.impl.conn.DefaultClientConnection@5ce8d869 shut down
-21:35:18.790 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@27eedb64
+    <system-out><![CDATA[23:46:34.932 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:8080
+23:46:34.976 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:8080
+23:46:35.981 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connect to localhost:8080 timed out. Connection will be retried using another IP address
+23:46:35.982 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:8080
+23:46:36.984 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection org.apache.http.impl.conn.DefaultClientConnection@4ce1d6d0 closed
+23:46:36.985 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Connection org.apache.http.impl.conn.DefaultClientConnection@4ce1d6d0 shut down
+23:46:36.985 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@24111ef1
 ]]></system-out>
   </testcase>
 </testsuite>

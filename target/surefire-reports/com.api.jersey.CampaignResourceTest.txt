@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.api.jersey.CampaignResourceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 8.398 sec <<< FAILURE! - in com.api.jersey.CampaignResourceTest
-com.api.jersey.CampaignResourceTest  Time elapsed: 8.395 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.618 sec <<< FAILURE! - in com.api.jersey.CampaignResourceTest
+com.api.jersey.CampaignResourceTest  Time elapsed: 6.615 sec  <<< ERROR!
 java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)

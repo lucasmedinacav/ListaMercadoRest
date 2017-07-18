@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.api.jersey.PersonResourceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.195 sec <<< FAILURE! - in com.api.jersey.PersonResourceTest
-com.api.jersey.PersonResourceTest  Time elapsed: 2.191 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.117 sec <<< FAILURE! - in com.api.jersey.PersonResourceTest
+com.api.jersey.PersonResourceTest  Time elapsed: 2.117 sec  <<< ERROR!
 java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
