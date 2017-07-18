@@ -118,11 +118,37 @@
 					<source>1.8</source>
 					<target>1.8</target>
 				</configuration>
+				<configuration>
+        			<finalName>${artifactId}</finalName>
+    			</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>${spring.version}</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+						<configuration>
+							<finalName>${artifactId}</finalName>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
+			 <!--<configuration>
+                    <contextPath>/</contextPath>
+                    <webApp>
+                        <contextPath>/</contextPath>
+                        <webInfIncludeJarPattern>.*/.*jersey-[^/]\.jar$</webInfIncludeJarPattern>
+                    </webApp>
+                    <war>\${project.build.directory}/\${project.build.finalName}.war</war>
+                </configuration>
+			<configuration>
+			<finalName>${artifactId}</finalName>
+    		</configuration>-->
+			
 		</plugins>
 	</build>
 
