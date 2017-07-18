@@ -13,7 +13,7 @@ public interface PersonDao extends JpaRepository<Person, Long> {
 	
 	@Query("SELECT p FROM Person p where p.email = :email")
 	Person findPersonByEmail(@Param("email") String email);
-	
+		
 	@Query(nativeQuery = true)
 	List<Campaign> findCampaingsNotRegisteredAndPeriodIsValid(@Param("idPerson") Long idPerson, @Param("idTeam") Long idTeam);
 	
