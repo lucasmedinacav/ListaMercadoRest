@@ -132,8 +132,8 @@
 				<configuration>
                 	<requiresUnpack>
                     	<dependency>
-                        	<groupId>org.jruby</groupId>
-                        	<artifactId>jruby-complete</artifactId>
+                        	<groupId>com.api</groupId>
+                        	<artifactId>campaignBootRest</artifactId>
                     	</dependency>
                 	</requiresUnpack>
             	</configuration>
