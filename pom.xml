@@ -60,6 +60,7 @@
 			<artifactId>jersey-bean-validation</artifactId>
 			<version>${jersey-version}</version>
 		</dependency>
+
 		<!-- End Jersey -->
 
 		<!-- Jackson -->
@@ -112,11 +113,10 @@
 	<build>
 		<plugins>
 			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
+				<groupId>org.apache.maven.plugins</groupId>
+    			<artifactId>maven-jar-plugin</artifactId>
 				<version>3.2</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
 					<finalName>${artifactId}</finalName>
 				</configuration>
 			</plugin>
@@ -133,6 +133,26 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<requiresUnpack>
+							<dependency>
+									<groupId>com.sun.jersey</groupId>
+									<artifactId>jersey-server</artifactId>
+							</dependency>
+							<dependency>
+									<groupId>com.sun.jersey</groupId>
+									<artifactId>jersey-core</artifactId>
+							</dependency>
+							<dependency>
+									<groupId>com.sun.jersey</groupId>
+									<artifactId>jersey-servlet</artifactId>
+							</dependency>
+					</requiresUnpack>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
