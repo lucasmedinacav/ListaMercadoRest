@@ -148,6 +148,14 @@
                     </goals>
                 </execution>
             </executions>
+			 <configuration>
+                <requiresUnpack>
+                    <dependency>
+                        <groupId>org.jruby</groupId>
+                        <artifactId>jruby-complete</artifactId>
+                    </dependency>
+                </requiresUnpack>
+            </configuration>
 			</plugin>
 			 <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
