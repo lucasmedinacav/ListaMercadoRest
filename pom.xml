@@ -123,7 +123,13 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<requiresUnpack>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+						<configuration>
+							<requiresUnpack>
 							<dependency>
 									<groupId>com.sun.jersey</groupId>
 									<artifactId>jersey-server</artifactId>
@@ -137,12 +143,6 @@
 									<artifactId>jersey-servlet</artifactId>
 							</dependency>
 					</requiresUnpack>
-				<executions>
-					<execution>
-						<goals>
-							<goal>repackage</goal>
-						</goals>
-						<configuration>
 							<finalName>${artifactId}</finalName>
 						</configuration>
 					</execution>
