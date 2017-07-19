@@ -23,6 +23,8 @@ Servico de usuarios: http://localhost:8080/people/
 Servico de times: http://localhost:8080/teams/ 
 Servico de camapanhas: http://localhost:8080/campaings/
 
+O serviço também está deployado no Heroku: https://campanhas-rest-api.herokuapp.com/people
+
 TESTES QUE SOLUCIONAM PROPOSTAS DOS EXERCICIOS
 1.a - Cadastro de Campanhas com atributos solicitados: CampaignResourceTest.java -  test1_RegisterCampaign1And2()
 1.b - O sistema não deverá retornar campanhas com a data de vigencia vencida: CampaignResourceTest.java - test3_RegisterCampaignWithInvalidPeriodAndGetCampaigns()
