@@ -23,9 +23,9 @@ public class SqlInitialization {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("org.postgresql.Driver");
 		dataSource.setUrl(
-				"jdbc:postgresql://ec2-23-23-244-83.compute-1.amazonaws.com:5432/d53pnqo4jin2n3?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory");
-		dataSource.setUsername("aeuqgjezymmmqt");
-		dataSource.setPassword("3fa9f58a1505bd27fa74ee1a24483720ee1c8fcc759d31ef84e9f2c0f94838fc");
+				"jdbc:postgresql://ec2-107-20-250-195.compute-1.amazonaws.com:5432/d12mq0309tqpkt?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory");
+		dataSource.setUsername("ramvgksxzxrimu");
+		dataSource.setPassword("f538d1c28a42d5f08925865d503fa5b3372800c6c0c2d9b57ef4d7afeeb7f3a1");
 		return dataSource;
 	}
 	
