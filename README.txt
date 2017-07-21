@@ -22,4 +22,6 @@ Comando para rodar o projeto: mvn spring-boot:run
 Servico de listas: http://localhost:8080/listas/ 
 Servico de produtos: http://localhost:8080/produtos/ 
 
+O serviço também está deployado no Heroku: https://campanhas-rest-api.herokuapp.com/people
+
 TESTES QUE SOLUCIONAM PRINCIPAIS PONTOS DA HISTORIA DA MARIAZINHA
