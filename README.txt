@@ -23,7 +23,7 @@ Servico de listas: http://localhost:8080/listas
 Servico de produtos: http://localhost:8080/produtos
 Servico de integracoes entre produtos e listas: http://localhost:8080/produtosLista 
 
-O serviço também está deployado no Heroku: https://campanhas-rest-api.herokuapp.com/people
+O serviço também está deployado no Heroku: https://lista-mercado-rest.herokuapp.com/listas/buscaTodas etc..
 
 TESTES QUE SOLUCIONAM PRINCIPAIS PONTOS DA HISTORIA DA MARIAZINHA
 Os testes foram desenvolvidos em tempo de construcao da aplicacao, ajudando a construir e testar ao mesmo tempo, como uma boa pratica que é.
@@ -32,7 +32,7 @@ com.api.jersey.ProdutoListaResourceTest
 com.api.jersey.ProdutoResourceTest
 
 FRONTEND
-Por mais que o foco do teste nao ser frontend, tentei entregar o maximo de funcionalidades em um layout agradavel de se mexer e entender (ux - usabilidade), pois sao conceitos pelo quais me interesso tambem
+Por mais que o foco do teste nao ser frontend , tentei entregar o maximo de funcionalidades em um layout agradavel de se mexer e entender (ux - usabilidade), pois sao conceitos pelo quais me interesso tambem
 Tecnologias utilizadas:
 Angular 4
 Bootstrap 3
