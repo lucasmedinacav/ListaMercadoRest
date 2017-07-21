@@ -31,7 +31,7 @@ com.api.jersey.ListaResourceTest
 com.api.jersey.ProdutoListaResourceTest
 com.api.jersey.ProdutoResourceTest
 
-FRONTEND
+FRONTENDgit add .
 Por mais que o foco do teste nao ser frontend , tentei entregar o maximo de funcionalidades em um layout agradavel de se mexer e entender (ux - usabilidade), pois sao conceitos pelo quais me interesso tambem
 Tecnologias utilizadas:
 Angular 4
