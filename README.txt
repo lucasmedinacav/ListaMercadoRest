@@ -12,18 +12,18 @@ Principais Tecnologias Utilizadas Para Desenvolvimento da Api REST:
 *O sistema consome banco de dados Postgres, os dados de conexao estao no SqlInitialization.java porem quem for avaliar o sistema nao precisara criar banco nem nada pois criei remoto com Heroku
 O relacionamento foi feito entre N - N com uma tabela associativa, onde da mais possibilidades para a aplicacao (gravar quatidade de produtos que maria ira comprar, se ele ja colocou no carrinho ou nao, etc)
 
+GITHUB:
+REST: https://github.com/lucasmedinacav/listaMercadoRest
+FRONT: https://github.com/lucasmedinacav/ListaMercadoFront
 
-Baixar projeto pelo github: https://github.com/lucasmedinacav/listaMercadoRest
-
-Ou comando no terminal: git clone https://github.com/lucasmedinacav/listaMercadoRest.git
-
-Comando para rodar o projeto: mvn spring-boot:run
+Comando para rodar o projeto rest---> mvn spring-boot:run
 
 Servico de listas: http://localhost:8080/listas
 Servico de produtos: http://localhost:8080/produtos
 Servico de integracoes entre produtos e listas: http://localhost:8080/produtosLista 
 
 O serviço também está deployado no Heroku: https://lista-mercado-rest.herokuapp.com/listas/buscaTodas etc..
+A aplicacao web esta deployada no Heroku: https://listamercadofront.herokuapp.com/
 
 TESTES QUE SOLUCIONAM PRINCIPAIS PONTOS DA HISTORIA DA MARIAZINHA
 Os testes foram desenvolvidos em tempo de construcao da aplicacao, ajudando a construir e testar ao mesmo tempo, como uma boa pratica que é.
